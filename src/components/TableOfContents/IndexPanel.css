@@ -1,0 +1,31 @@
+.index-panel__list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0;
+}
+
+.index-panel__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  padding: 0.7rem 1.1rem;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.index-panel__item:hover {
+  background: var(--accent-soft);
+  color: var(--primary-dark);
+}
+
+.index-panel__page {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}

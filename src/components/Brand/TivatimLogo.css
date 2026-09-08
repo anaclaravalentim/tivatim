@@ -1,0 +1,22 @@
+.tivatim-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tivatim-logo--full {
+  /* Espaço entre a flor e a palavra proporcional ao tamanho do símbolo (não
+     um valor fixo), pra manter a mesma relação flor↔texto da logo oficial
+     em qualquer tamanho (cabeçalho, capa, rodapé). */
+  gap: calc(var(--tivatim-mark-size, 40px) * 0.2);
+}
+
+.tivatim-logo__word {
+  font-family: var(--font-logo);
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  /* Acompanha o tamanho do símbolo (markSize) em vez de um valor fixo, para
+     caber tanto no cabeçalho/capa quanto no rodapé compacto de cada página. */
+  font-size: calc(var(--tivatim-mark-size, 40px) * 1.05);
+  line-height: 1;
+}

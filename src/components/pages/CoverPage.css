@@ -1,0 +1,79 @@
+.cover-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-color);
+}
+
+.cover-page__topbar {
+  background: var(--primary-color);
+  background-image: linear-gradient(120deg, var(--primary-color), var(--primary-dark));
+  padding: 1.1rem 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cover-page__dashes {
+  display: flex;
+  gap: 5px;
+  padding: 0.8rem 1.4rem 0;
+}
+
+.cover-page__dashes span {
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--primary-light);
+}
+
+.cover-page__dashes span:first-child {
+  background: var(--primary-color);
+  width: 34px;
+}
+
+.cover-page__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 1.6rem;
+  gap: 0.9rem;
+}
+
+.cover-page__title {
+  font-size: 2.1rem;
+  line-height: 1.08;
+  font-weight: 800;
+  color: var(--primary-dark);
+  letter-spacing: 0.01em;
+}
+
+.cover-page__subtitle {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  color: var(--accent-color);
+}
+
+.cover-page__showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+
+.cover-page__badge {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  padding: 16px;
+}

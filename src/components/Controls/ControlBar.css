@@ -1,0 +1,73 @@
+.control-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--primary-darker);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.control-bar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transition: background 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+.control-bar__btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.control-bar__btn.is-active {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.control-bar__btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.control-bar__indicator {
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  min-width: 4.5rem;
+  text-align: center;
+}
+
+.control-bar__divider {
+  width: 1px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 0.2rem;
+}
+
+.control-bar__slider {
+  width: 96px;
+  accent-color: var(--primary-light);
+}
+
+@media (max-width: 560px) {
+  .control-bar {
+    gap: 0.15rem;
+    padding: 0.4rem 0.4rem;
+  }
+  .control-bar__slider {
+    width: 60px;
+  }
+  .control-bar__btn {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,69 @@
+.flipbook-viewer {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+.flipbook-viewer__book {
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.45));
+  /*
+   * SEM transição no transform: a correção de centralização (JS, ver
+   * FlipbookViewer.jsx) precisa ser aplicada instantaneamente. Com uma
+   * transição, cada recálculo (o que acontece várias vezes durante uma
+   * única virada de página) desliza suavemente a partir do valor anterior
+   * — se um novo recálculo chega antes da animação anterior terminar, o
+   * resultado visível é exatamente o deslocamento horizontal indesejado.
+   */
+}
+
+.flip-page {
+  background: var(--surface-color);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.flip-page__inner {
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.1rem 1.1rem 0.4rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: radial-gradient(var(--border-color) 0.6px, transparent 0.6px);
+  background-size: 14px 14px;
+  background-position: -6px -6px;
+  /*
+   * O tamanho real de cada página é decidido pelo react-pageflip (modo
+   * "stretch", limitado por min/maxWidth/Height) e pode ficar bem mais baixo
+   * que o normal dependendo da proporção largura/altura da janela — não só
+   * em telas estreitas (@media já cobre isso), mas também em janelas largas
+   * porém curtas (ex.: tablet em paisagem). Uma container query mede a altura
+   * REAL da página renderizada (qualquer que seja o motivo dela ser baixa) e
+   * deixa CategoryPage/ProductCard encolherem o suficiente para não cortar
+   * conteúdo.
+   */
+  container-type: size;
+  container-name: flip-page;
+}
+
+.flip-page__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.1rem;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 640px) {
+  .flipbook-viewer {
+    padding: 0.5rem;
+  }
+}

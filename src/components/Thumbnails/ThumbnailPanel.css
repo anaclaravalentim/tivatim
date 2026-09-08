@@ -1,0 +1,105 @@
+.side-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(320px, 82vw);
+  background: var(--surface-color);
+  box-shadow: var(--shadow-lg);
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-panel.is-open {
+  transform: translateX(0);
+}
+
+.side-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--primary-color);
+  background-image: linear-gradient(120deg, var(--primary-color), var(--primary-dark));
+}
+
+.side-panel__header h4 {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.side-panel__close {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 1;
+  width: 28px;
+  height: 28px;
+}
+
+.thumbnail-panel__grid {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  padding: 1rem;
+  align-content: start;
+}
+
+.thumbnail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  border: 2px solid transparent;
+  background: none;
+  padding: 0;
+}
+
+.thumbnail-card__preview {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  padding: 0.2rem;
+}
+
+.thumbnail-card__preview--cover {
+  background: linear-gradient(160deg, var(--primary-color), var(--primary-dark));
+  color: #fff;
+}
+
+.thumbnail-card__preview--brands,
+.thumbnail-card__preview--contact {
+  background: var(--accent-soft);
+}
+
+.thumbnail-card.is-current .thumbnail-card__preview {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+.thumbnail-card__number {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .side-panel {
+    width: 100%;
+  }
+}

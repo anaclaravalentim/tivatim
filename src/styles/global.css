@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Fredoka:wght@500;600;700&display=swap');
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  /* overflow:clip (not hidden) also blocks *programmatic* scrolling — needed
+     because off-canvas panels (translateX, still in the overflow region)
+     otherwise let a focus-driven scrollIntoView nudge the whole app sideways. */
+  overflow: clip;
+}
+
+body {
+  margin: 0;
+  background: var(--primary-darker);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  margin: 0;
+  color: var(--primary-dark);
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--primary-light);
+  color: var(--text-inverse);
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+ * Impressão / exportação (Ctrl+P, "Salvar como PDF").
+ *
+ * Em tela, cada página física é um bloco de tamanho fixo, empilhado de forma
+ * absoluta pela lib de flipbook (necessário para a animação de virar). Para
+ * impressão isso é desfeito: as páginas passam a fluir em ordem normal do
+ * documento (uma por folha), com altura automática — deixando o navegador
+ * paginar de verdade, e as regras break-inside/page-break-inside abaixo
+ * garantem que nenhum card ou bloco de marca/categoria seja partido ao meio
+ * entre duas folhas impressas.
+ */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .app__header,
+  .control-bar,
+  .side-panel {
+    display: none !important;
+  }
+
+  html,
+  body,
+  #root,
+  .app,
+  .app__stage,
+  .flipbook-viewer {
+    height: auto !important;
+    overflow: visible !important;
+    background: #ffffff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .flipbook-viewer__book,
+  .flipbook-viewer__book .stf__wrapper,
+  .flipbook-viewer__book .stf__block,
+  .flipbook-viewer__book .stf__parent {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    filter: none !important;
+    box-shadow: none !important;
+  }
+
+  .flip-page {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible !important;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .flip-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .flip-page__inner {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Nenhum card de produto ou bloco de categoria/marca deve ser partido
+     entre duas páginas impressas. */
+  .product-card,
+  .category-page__group,
+  .brand-badge,
+  .category-page__header,
+  .brands-page__header {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

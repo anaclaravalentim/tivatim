@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b5ea3"/>
+      <stop offset="100%" stop-color="#0d2a52"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#bg)"/>
+  <g transform="translate(50,52)">
+    <g id="petal-group" fill="#ffffff">
+      <path d="M0,0 Q-11,-16 -4,-38 Q0,-46 4,-38 Q11,-16 0,0 Z" opacity="0.95"/>
+      <g transform="rotate(60)"><path d="M0,0 Q-11,-16 -4,-38 Q0,-46 4,-38 Q11,-16 0,0 Z" opacity="0.95"/></g>
+      <g transform="rotate(120)"><path d="M0,0 Q-11,-16 -4,-38 Q0,-46 4,-38 Q11,-16 0,0 Z" opacity="0.95"/></g>
+      <g transform="rotate(180)"><path d="M0,0 Q-11,-16 -4,-38 Q0,-46 4,-38 Q11,-16 0,0 Z" opacity="0.95"/></g>
+      <g transform="rotate(240)"><path d="M0,0 Q-11,-16 -4,-38 Q0,-46 4,-38 Q11,-16 0,0 Z" opacity="0.95"/></g>
+      <g transform="rotate(300)"><path d="M0,0 Q-11,-16 -4,-38 Q0,-46 4,-38 Q11,-16 0,0 Z" opacity="0.95"/></g>
+    </g>
+    <circle r="4.5" fill="#0d2a52"/>
+  </g>
+</svg>

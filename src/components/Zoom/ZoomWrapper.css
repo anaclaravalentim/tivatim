@@ -1,0 +1,23 @@
+.zoom-wrapper__outer,
+.zoom-wrapper__inner {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ * Arrastar com o botão esquerdo do mouse move o conteúdo (pan) mesmo no
+ * zoom padrão (100%) — o cursor de "mão" indica que a área é arrastável,
+ * como num visualizador de imagens/PDF. Cliques em botões/links dentro da
+ * página continuam funcionando normalmente (a lib só inicia o pan depois de
+ * um deslocamento mínimo do mouse).
+ */
+.zoom-wrapper__outer {
+  cursor: grab;
+}
+
+.zoom-wrapper__outer:active {
+  cursor: grabbing;
+}

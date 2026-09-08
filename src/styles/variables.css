@@ -1,0 +1,51 @@
+/*
+  Paleta derivada da identidade visual da Tivatim (logo: flor/pinwheel branca
+  sobre gradiente de azul profissional). Todas as cores do projeto devem
+  referenciar estas variáveis — não usar cores soltas nos componentes.
+*/
+:root {
+  /* Azul institucional (extraído do gradiente da logo) */
+  --primary-color: #1e4c8a;
+  --primary-dark: #0d2a52;
+  --primary-darker: #081c3a;
+  --primary-light: #4a7fc2;
+  --primary-lighter: #cfe0f5;
+
+  --secondary-color: #ffffff;
+
+  --accent-color: #2e6db4;
+  --accent-soft: #e8f0fb;
+
+  --background-color: #f4f7fb;
+  --surface-color: #ffffff;
+
+  --text-color: #142238;
+  --text-muted: #566887;
+  --text-inverse: #ffffff;
+
+  --border-color: #dde6f2;
+  --border-strong: #b9cbe6;
+
+  --success-color: #2f9e64;
+
+  --shadow-sm: 0 1px 3px rgba(13, 42, 82, 0.08);
+  --shadow-md: 0 4px 16px rgba(13, 42, 82, 0.12);
+  --shadow-lg: 0 12px 32px rgba(13, 42, 82, 0.22);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --font-heading: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  /* Fonte arredondada/"bubble" usada só no wordmark da logo, escolhida por
+     comparação visual direta com a logo oficial (traços bem grossos e
+     uniformes, "t" com gancho curvo, ponto do "i" bem redondo, "a" de
+     balcão único bem arredondado) — as demais fontes do projeto continuam
+     Poppins/Inter. */
+  --font-logo: 'Fredoka', 'Segoe UI', system-ui, sans-serif;
+
+  --page-w: 480px;
+  --page-h: 660px;
+
+  --viewer-bg: radial-gradient(circle at 50% 20%, #17335f 0%, var(--primary-darker) 70%);
+}

@@ -1,0 +1,151 @@
+.category-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 1cqh;
+}
+
+.category-page__header {
+  background: var(--primary-color);
+  background-image: linear-gradient(120deg, var(--primary-color), var(--primary-dark));
+  color: var(--text-inverse);
+  padding: 1.1cqh 2.6cqw;
+  border-radius: var(--radius-sm);
+}
+
+.category-page__header h3 {
+  color: var(--text-inverse);
+  /*
+   * Fonte e espaçamentos desta página em cqh/cqw (% da altura/largura real
+   * da página, medida via container-type:size em flip-page__inner) em vez
+   * de rem fixo — o react-pageflip redimensiona a página entre um mínimo e
+   * um máximo ("stretch"), então o conteúdo precisa crescer/encolher junto
+   * para preencher o espaço disponível em telas maiores, sem depender de um
+   * valor fixo calibrado para um único tamanho de janela.
+   */
+  font-size: clamp(0.8rem, 2.4cqh, 1.5rem);
+  letter-spacing: 0.01em;
+}
+
+.category-page__body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7cqh;
+  overflow: hidden;
+}
+
+.category-page__brand-title {
+  grid-column: 1 / -1;
+  font-size: clamp(0.54rem, 1.55cqh, 0.95rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-dark);
+  padding-bottom: 0.15cqh;
+  border-bottom: 1px solid var(--border-color);
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.category-page__brand-title:not(:first-child) {
+  margin-top: 0.05cqh;
+}
+
+.category-page__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: start;
+  gap: 0.4cqh 1.6cqw;
+  /* flex-shrink:0 (não min-height:0!) é o que importa aqui: o grid nunca
+     deve ser espremido abaixo da altura natural dos cards — se não couber,
+     quem deve cortar de forma limpa é o overflow:hidden do body, não o
+     algoritmo de flex comprimindo cada linha do grid. */
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.category-page__grid--featured {
+  grid-template-columns: 1fr;
+}
+
+.category-page__disclaimer {
+  font-size: clamp(0.52rem, 1.4cqh, 0.85rem);
+  color: var(--text-muted);
+  text-align: center;
+  padding-top: 0.3cqh;
+  border-top: 1px dashed var(--border-color);
+}
+
+@media (max-width: 480px) {
+  .category-page {
+    gap: 0.25rem;
+  }
+
+  .category-page__header {
+    padding: 0.4rem 0.7rem;
+  }
+
+  .category-page__header h3 {
+    font-size: 0.88rem;
+  }
+
+  .category-page__body {
+    gap: 0.25rem;
+  }
+
+  .category-page__brand-title {
+    padding-bottom: 0.06rem;
+  }
+
+  .category-page__brand-title:not(:first-child) {
+    margin-top: 0.03rem;
+  }
+
+  .category-page__grid {
+    gap: 0.16rem 0.35rem;
+  }
+}
+
+/*
+ * Mesma ideia do @media acima, mas para quando a página fica baixa por causa
+ * da PROPORÇÃO da janela (ex.: tablet em paisagem) em vez de por ser
+ * estreita — ver o container-type definido em flip-page__inner.
+ */
+@container flip-page (max-height: 560px) {
+  .category-page {
+    gap: 0.25rem;
+  }
+
+  .category-page__header {
+    padding: 0.35rem 0.7rem;
+  }
+
+  .category-page__header h3 {
+    font-size: 0.84rem;
+  }
+
+  .category-page__body {
+    gap: 0.2rem;
+  }
+
+  .category-page__brand-title {
+    padding-bottom: 0.04rem;
+  }
+
+  .category-page__brand-title:not(:first-child) {
+    margin-top: 0.01rem;
+  }
+
+  .category-page__grid {
+    gap: 0.14rem 0.35rem;
+  }
+
+  .category-page__disclaimer {
+    padding-top: 0.06rem;
+  }
+}

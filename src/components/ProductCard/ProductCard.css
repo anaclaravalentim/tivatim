@@ -1,0 +1,281 @@
+/*
+ * Card padrão (grade de categoria): layout HORIZONTAL — imagem à esquerda
+ * ocupando toda a altura da linha (align-items:stretch, o padrão do flex),
+ * informações à direita. Isso dá à foto do produto uma área bem maior do
+ * que a antiga faixa estreita no topo, sem exigir mais altura de página
+ * (a altura da linha já é definida pelo texto; a imagem só a preenche).
+ * O card "lg" (páginas de Destaques) continua vertical, como antes.
+ */
+.product-card {
+  display: flex;
+  flex-direction: row;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  min-width: 0;
+  /*
+   * Em cqh (% da altura real da página, medida via container-type:size em
+   * flip-page__inner) em vez de px fixo — o react-pageflip redimensiona a
+   * página em modo "stretch" entre um mínimo e um máximo, então o card
+   * precisa crescer/encolher junto, e não ficar pequeno demais (sobrando
+   * espaço vazio) em telas onde a página renderiza maior.
+   */
+  min-height: 16cqh;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.product-card--lg {
+  flex-direction: column;
+  min-height: 0;
+}
+
+.product-image {
+  position: relative;
+  flex: 0 0 42%;
+  background: linear-gradient(160deg, var(--accent-soft), #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border-color);
+}
+
+.product-image__icon {
+  width: 50%;
+  max-width: 10.8cqh;
+  color: var(--primary-color);
+  opacity: 0.85;
+}
+
+.product-image--photo {
+  background: #ffffff;
+}
+
+.product-image--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.product-card--lg .product-image {
+  flex: none;
+  height: 140px;
+  border-right: none;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.product-card--lg .product-image__icon {
+  width: 42%;
+  max-width: 76px;
+}
+
+.product-image__tag {
+  position: absolute;
+  left: 6px;
+  bottom: 5px;
+  font-size: 0.5rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.product-card__body {
+  padding: 0.6cqh 1.6cqw 0.7cqh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15cqh;
+  flex: 1;
+}
+
+.product-card__brand {
+  font-size: clamp(0.56rem, 1.72cqh, 0.98rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.product-card__name {
+  font-size: clamp(0.8rem, 2.5cqh, 1.4rem);
+  line-height: 1.08;
+  color: var(--text-color);
+  /* Trava em no máximo 2 linhas — sem isso, nomes que por acaso quebram em
+     2 linhas (vs. 1 linha na maioria dos outros produtos) deixam a altura
+     do card imprevisível e podem estourar o espaço da página por pouco. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card__model {
+  font-size: clamp(0.64rem, 2cqh, 1.1rem);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.product-card__desc {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  line-height: 1.28;
+  margin-top: 0.2rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-card--lg .product-card__desc {
+  -webkit-line-clamp: 2;
+}
+
+.product-card__specs {
+  list-style: none;
+  padding: 0;
+  margin: 0.3cqh 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2cqh;
+}
+
+.product-card__specs li {
+  font-size: clamp(0.58rem, 1.9cqh, 1.05rem);
+  color: var(--text-color);
+  padding-left: 0.8rem;
+  position: relative;
+}
+
+.product-card__specs li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--primary-light);
+}
+
+.product-card--sm .product-card__name {
+  font-size: 0.78rem;
+}
+
+/*
+ * Modo retrato/celular: a página vira uma única folha estreita e mais baixa
+ * (a lib deriva a altura da largura disponível), então sobra bem menos
+ * espaço vertical do que no spread de duas páginas do desktop. Cards mais
+ * enxutos aqui (sem descrição, imagem e fontes menores) evitam que o
+ * conteúdo estoure a página nesse modo.
+ */
+@media (max-width: 480px) {
+  .product-card {
+    min-height: 92px;
+  }
+
+  .product-image__icon {
+    max-width: 40px;
+  }
+
+  .product-card--lg .product-image {
+    height: 70px;
+  }
+
+  .product-card__body {
+    padding: 0.15rem 0.35rem 0.25rem;
+    gap: 0.04rem;
+  }
+
+  .product-card__brand {
+    font-size: 0.56rem;
+  }
+
+  .product-card__name {
+    font-size: 0.76rem;
+    line-height: 1.1;
+  }
+
+  .product-card__model {
+    font-size: 0.62rem;
+  }
+
+  .product-card__desc {
+    display: none;
+  }
+
+  .product-card--lg .product-card__desc {
+    display: -webkit-box;
+    font-size: 0.68rem;
+    -webkit-line-clamp: 1;
+  }
+
+  .product-card__specs {
+    margin-top: 0.08rem;
+    gap: 0.04rem;
+  }
+
+  .product-card__specs li {
+    font-size: 0.58rem;
+  }
+}
+
+/*
+ * Página renderizada baixa por causa da PROPORÇÃO da janela (ex.: tablet em
+ * paisagem, janela larga porém curta) — não é coberto pelo @media de largura
+ * acima. Uma container query mede a altura real da página (flip-page__inner)
+ * e encolhe os cards o suficiente para caberem sem cortar conteúdo.
+ */
+@container flip-page (max-height: 560px) {
+  .product-card {
+    min-height: 56px;
+  }
+
+  .product-image__icon {
+    max-width: 34px;
+  }
+
+  .product-card--lg .product-image {
+    height: 96px;
+  }
+
+  .product-card__body {
+    padding: 0.12rem 0.4rem 0.2rem;
+    gap: 0.02rem;
+  }
+
+  .product-card__brand {
+    font-size: 0.54rem;
+  }
+
+  .product-card__name {
+    font-size: 0.78rem;
+    line-height: 1.1;
+  }
+
+  .product-card__model {
+    font-size: 0.64rem;
+  }
+
+  .product-card__desc {
+    display: none;
+  }
+
+  .product-card--lg .product-card__desc {
+    display: -webkit-box;
+    font-size: 0.68rem;
+    -webkit-line-clamp: 1;
+  }
+
+  .product-card__specs {
+    margin-top: 0.04rem;
+    gap: 0.02rem;
+  }
+
+  .product-card__specs li {
+    font-size: 0.58rem;
+  }
+}

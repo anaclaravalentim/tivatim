@@ -1,0 +1,52 @@
+.page-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  /* Sólido (não translúcido): a seta pode cair tanto sobre a margem escura
+     quanto sobre a própria página branca do livro (quando ele ocupa quase
+     toda a largura do palco) — precisa ler bem nos dois casos. */
+  background: rgba(8, 28, 58, 0.72);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  transition: background 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+.page-arrow svg {
+  width: 28px;
+  height: 28px;
+}
+
+.page-arrow:hover:not(:disabled) {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+.page-arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.page-arrow--left {
+  left: clamp(6px, 2vw, 28px);
+}
+
+.page-arrow--right {
+  right: clamp(6px, 2vw, 28px);
+}
+
+/* Em telas estreitas o livro ocupa quase toda a largura do palco — não sobra
+   margem lateral para as setas, que ficariam por cima das páginas. A barra
+   inferior (com prev/next também) já cobre a navegação nesse caso. */
+@media (max-width: 780px) {
+  .page-arrow {
+    display: none;
+  }
+}
