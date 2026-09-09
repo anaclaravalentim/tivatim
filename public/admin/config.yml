@@ -5,9 +5,7 @@ backend:
   name: github
   repo: anaclaravalentim/tivatim
   branch: main
-  # Troque pelo domínio real do site depois do primeiro deploy na Vercel
-  # (ex.: https://catalogo-tivatim.vercel.app ou o domínio próprio).
-  base_url: https://SEU-DOMINIO-AQUI.vercel.app
+  base_url: https://tivatim.vercel.app
   auth_endpoint: api/auth
 
 # Fotos enviadas pelo painel vão para public/products/ e ficam acessíveis
