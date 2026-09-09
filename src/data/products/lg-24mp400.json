@@ -1,0 +1,13 @@
+{
+  "id": "lg-24mp400",
+  "brand": "lg",
+  "category": "monitores",
+  "name": "24MP400",
+  "model": "24\"",
+  "description": "Monitor IPS para escritório e uso doméstico.",
+  "specs": [
+    "Full HD IPS",
+    "AMD FreeSync"
+  ],
+  "icon": "monitor"
+}

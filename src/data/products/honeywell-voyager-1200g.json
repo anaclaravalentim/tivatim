@@ -1,0 +1,13 @@
+{
+  "id": "honeywell-voyager-1200g",
+  "brand": "honeywell",
+  "category": "automacao",
+  "name": "Voyager 1200g",
+  "model": "Leitor de Código de Barras",
+  "description": "Leitor a laser robusto para uso comercial contínuo.",
+  "specs": [
+    "Leitura 1D",
+    "USB"
+  ],
+  "icon": "scanner"
+}

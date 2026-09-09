@@ -1,0 +1,13 @@
+{
+  "id": "lenovo-mouse-300",
+  "brand": "lenovo",
+  "category": "perifericos",
+  "name": "300 Wireless Mouse",
+  "model": "Mouse sem fio",
+  "description": "Mouse sem fio compacto para uso corporativo.",
+  "specs": [
+    "Wireless 2.4GHz",
+    "1000dpi"
+  ],
+  "icon": "mouse"
+}

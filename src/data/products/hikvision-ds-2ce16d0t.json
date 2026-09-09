@@ -1,0 +1,13 @@
+{
+  "id": "hikvision-ds-2ce16d0t",
+  "brand": "hikvision",
+  "category": "seguranca",
+  "name": "DS-2CE16D0T",
+  "model": "Câmera HD-TVI",
+  "description": "Câmera HD analógica para monitoramento residencial e comercial.",
+  "specs": [
+    "Full HD",
+    "Visão noturna IR"
+  ],
+  "icon": "camera"
+}

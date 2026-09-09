@@ -1,0 +1,13 @@
+{
+  "id": "furukawa-cabo-cat6",
+  "brand": "furukawa",
+  "category": "redes",
+  "name": "Cabo de Rede",
+  "model": "U/UTP Cat.6",
+  "description": "Cabeamento estruturado para redes de dados de alta performance.",
+  "specs": [
+    "Cat.6",
+    "U/UTP"
+  ],
+  "icon": "cable"
+}

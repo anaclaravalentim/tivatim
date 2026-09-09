@@ -1,0 +1,13 @@
+{
+  "id": "acer-swift-go-14",
+  "brand": "acer",
+  "category": "computadores",
+  "name": "Swift Go 14",
+  "model": "Intel Core i5",
+  "description": "Notebook ultrafino para mobilidade e produtividade.",
+  "specs": [
+    "16GB RAM",
+    "SSD NVMe"
+  ],
+  "icon": "notebook"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "zebra-zt230",
+  "brand": "zebra",
+  "category": "automacao",
+  "name": "ZT230",
+  "model": "Impressora Industrial",
+  "description": "Impressora de etiquetas industrial para alto volume de impressão.",
+  "specs": [
+    "Térmica/transferência",
+    "203dpi"
+  ],
+  "icon": "label-printer"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dell-vostro-3520",
+  "brand": "dell",
+  "category": "computadores",
+  "name": "Vostro 3520",
+  "model": "Intel Core i7",
+  "description": "Notebook para pequenas e médias empresas.",
+  "specs": [
+    "16GB RAM",
+    "SSD 512GB"
+  ],
+  "icon": "notebook"
+}

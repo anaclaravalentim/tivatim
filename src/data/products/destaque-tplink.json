@@ -1,0 +1,13 @@
+{
+  "id": "destaque-tplink",
+  "brand": "tp-link",
+  "category": "destaques",
+  "name": "Archer AX55",
+  "model": "Roteador Wi-Fi 6",
+  "description": "Conectividade de próxima geração para casa e escritório.",
+  "specs": [
+    "Wi-Fi 6",
+    "Dual band"
+  ],
+  "icon": "router"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "samsung-990-evo",
+  "brand": "samsung",
+  "category": "armazenamento",
+  "name": "990 EVO",
+  "model": "1TB",
+  "description": "SSD NVMe de alta performance para estações de trabalho.",
+  "specs": [
+    "NVMe PCIe 4.0/5.0",
+    "M.2 2280"
+  ],
+  "icon": "ssd"
+}

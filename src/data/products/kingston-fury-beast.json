@@ -1,0 +1,13 @@
+{
+  "id": "kingston-fury-beast",
+  "brand": "kingston",
+  "category": "memoria",
+  "name": "Fury Beast",
+  "model": "16GB DDR4",
+  "description": "Memória RAM para desktops gamers e estações de trabalho.",
+  "specs": [
+    "DDR4",
+    "CL16"
+  ],
+  "icon": "ram"
+}

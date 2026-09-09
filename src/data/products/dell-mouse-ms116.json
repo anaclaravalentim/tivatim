@@ -1,0 +1,13 @@
+{
+  "id": "dell-mouse-ms116",
+  "brand": "dell",
+  "category": "perifericos",
+  "name": "MS116",
+  "model": "Mouse com fio",
+  "description": "Mouse óptico para uso corporativo do dia a dia.",
+  "specs": [
+    "USB",
+    "Óptico"
+  ],
+  "icon": "mouse"
+}

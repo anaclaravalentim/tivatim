@@ -1,0 +1,13 @@
+{
+  "id": "acer-aspire-5",
+  "brand": "acer",
+  "category": "computadores",
+  "name": "Aspire 5",
+  "model": "AMD Ryzen 7",
+  "description": "Desempenho equilibrado para multitarefas e uso profissional.",
+  "specs": [
+    "16GB RAM",
+    "SSD 512GB"
+  ],
+  "icon": "notebook"
+}

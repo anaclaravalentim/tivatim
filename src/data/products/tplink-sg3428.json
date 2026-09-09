@@ -1,0 +1,13 @@
+{
+  "id": "tplink-sg3428",
+  "brand": "tp-link",
+  "category": "infraestrutura",
+  "name": "TL-SG3428",
+  "model": "Switch Gerenciável L2",
+  "description": "Switch gerenciável para redes corporativas estruturadas.",
+  "specs": [
+    "24 portas Gigabit",
+    "Gerenciável L2"
+  ],
+  "icon": "switch"
+}

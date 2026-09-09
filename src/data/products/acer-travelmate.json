@@ -1,0 +1,13 @@
+{
+  "id": "acer-travelmate",
+  "brand": "acer",
+  "category": "computadores",
+  "name": "TravelMate",
+  "model": "Intel Core i5",
+  "description": "Linha corporativa Acer voltada a empresas e instituições.",
+  "specs": [
+    "8GB RAM",
+    "SSD NVMe"
+  ],
+  "icon": "notebook"
+}

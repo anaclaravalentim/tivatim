@@ -1,0 +1,13 @@
+{
+  "id": "tplink-archer-ax55",
+  "brand": "tp-link",
+  "category": "redes",
+  "name": "Archer AX55",
+  "model": "Wi-Fi 6",
+  "description": "Roteador Wi-Fi 6 para maior capacidade de dispositivos conectados.",
+  "specs": [
+    "Dual band",
+    "OFDMA"
+  ],
+  "icon": "router"
+}

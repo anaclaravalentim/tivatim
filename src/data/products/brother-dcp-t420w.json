@@ -1,0 +1,13 @@
+{
+  "id": "brother-dcp-t420w",
+  "brand": "brother",
+  "category": "impressao",
+  "name": "DCP-T420W",
+  "model": "Multifuncional Tanque de Tinta",
+  "description": "Impressora multifuncional com Wi-Fi para escritórios e residências.",
+  "specs": [
+    "Wi-Fi",
+    "Tanque de tinta"
+  ],
+  "icon": "printer"
+}

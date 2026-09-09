@@ -1,0 +1,13 @@
+{
+  "id": "kingston-valueram",
+  "brand": "kingston",
+  "category": "memoria",
+  "name": "ValueRAM",
+  "model": "8GB DDR4",
+  "description": "Memória para desktops corporativos e servidores de entrada.",
+  "specs": [
+    "DDR4",
+    "UDIMM"
+  ],
+  "icon": "ram"
+}

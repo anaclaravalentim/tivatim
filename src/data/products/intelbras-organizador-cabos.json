@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-organizador-cabos",
+  "brand": "intelbras",
+  "category": "infraestrutura",
+  "name": "Organizador",
+  "model": "Cabos 1U",
+  "description": "Organizador para acomodar cabos em racks de rede.",
+  "specs": [
+    "19\"",
+    "1U"
+  ],
+  "icon": "rack"
+}

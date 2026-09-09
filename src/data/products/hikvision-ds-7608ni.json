@@ -1,0 +1,13 @@
+{
+  "id": "hikvision-ds-7608ni",
+  "brand": "hikvision",
+  "category": "seguranca",
+  "name": "DS-7608NI-K2",
+  "model": "NVR 8 canais",
+  "description": "NVR para gerenciamento de até 8 câmeras IP em rede.",
+  "specs": [
+    "8 canais",
+    "Full HD/4K"
+  ],
+  "icon": "dvr"
+}

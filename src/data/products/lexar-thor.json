@@ -1,0 +1,13 @@
+{
+  "id": "lexar-thor",
+  "brand": "lexar",
+  "category": "memoria",
+  "name": "Thor",
+  "model": "16GB DDR4",
+  "description": "Memória RAM com dissipador para montagens gamer de alto desempenho.",
+  "specs": [
+    "DDR4",
+    "Dissipador em alumínio"
+  ],
+  "icon": "ram"
+}

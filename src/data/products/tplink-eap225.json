@@ -1,0 +1,13 @@
+{
+  "id": "tplink-eap225",
+  "brand": "tp-link",
+  "category": "redes",
+  "name": "EAP225",
+  "model": "Access Point",
+  "description": "Access point corporativo com gerenciamento centralizado.",
+  "specs": [
+    "AC1350",
+    "PoE"
+  ],
+  "icon": "access-point"
+}

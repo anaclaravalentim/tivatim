@@ -1,0 +1,13 @@
+{
+  "id": "brother-dcp-l3560cdw",
+  "brand": "brother",
+  "category": "impressao",
+  "name": "DCP-L3560CDW",
+  "model": "Multifuncional Laser Color",
+  "description": "Multifuncional laser colorida para escritórios de médio porte.",
+  "specs": [
+    "Wi-Fi",
+    "Laser color"
+  ],
+  "icon": "printer"
+}

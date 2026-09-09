@@ -1,0 +1,13 @@
+{
+  "id": "canon-pixma-g6011",
+  "brand": "canon",
+  "category": "impressao",
+  "name": "PIXMA G6011",
+  "model": "Multifuncional",
+  "description": "Multifuncional tanque de tinta com Wi-Fi para escritórios.",
+  "specs": [
+    "Wi-Fi",
+    "Tanque de tinta"
+  ],
+  "icon": "printer"
+}

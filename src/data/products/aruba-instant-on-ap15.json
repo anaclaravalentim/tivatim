@@ -1,0 +1,13 @@
+{
+  "id": "aruba-instant-on-ap15",
+  "brand": "aruba",
+  "category": "redes",
+  "name": "Instant On AP15",
+  "model": "Access Point",
+  "description": "Access point corporativo com gestão simplificada em nuvem.",
+  "specs": [
+    "Wi-Fi 6",
+    "Gestão em nuvem"
+  ],
+  "icon": "access-point"
+}

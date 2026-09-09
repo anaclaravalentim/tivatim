@@ -1,0 +1,13 @@
+{
+  "id": "acer-webcam",
+  "brand": "acer",
+  "category": "perifericos",
+  "name": "Webcam HD",
+  "model": "USB",
+  "description": "Webcam para videochamadas e reuniões corporativas.",
+  "specs": [
+    "HD 720p/1080p",
+    "USB Plug and Play"
+  ],
+  "icon": "webcam"
+}

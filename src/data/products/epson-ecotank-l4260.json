@@ -1,0 +1,13 @@
+{
+  "id": "epson-ecotank-l4260",
+  "brand": "epson",
+  "category": "impressao",
+  "name": "EcoTank L4260",
+  "model": "Multifuncional",
+  "description": "Multifuncional com tanque de tinta e impressão duplex.",
+  "specs": [
+    "Wi-Fi",
+    "Duplex automático"
+  ],
+  "icon": "printer"
+}

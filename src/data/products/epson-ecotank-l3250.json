@@ -1,0 +1,13 @@
+{
+  "id": "epson-ecotank-l3250",
+  "brand": "epson",
+  "category": "impressao",
+  "name": "EcoTank L3250",
+  "model": "Multifuncional",
+  "description": "Multifuncional com sistema de tanque de tinta e Wi-Fi.",
+  "specs": [
+    "Wi-Fi",
+    "Tanque de tinta"
+  ],
+  "icon": "printer"
+}

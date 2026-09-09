@@ -1,0 +1,129 @@
+# Configuração do painel de edição (Decap CMS) do Catálogo Tivatim.
+# Documentação completa: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: anaclaravalentim/catalogo
+  branch: main
+  # Troque pelo domínio real do site depois do primeiro deploy na Vercel
+  # (ex.: https://catalogo-tivatim.vercel.app ou o domínio próprio).
+  base_url: https://SEU-DOMINIO-AQUI.vercel.app
+  auth_endpoint: api/auth
+
+# Fotos enviadas pelo painel vão para public/products/ e ficam acessíveis
+# em /products/<arquivo> — funciona tanto em desenvolvimento quanto no site
+# publicado, sem precisar de nenhuma etapa extra de build.
+media_folder: public/products
+public_folder: /products
+
+collections:
+  - name: products
+    label: Produtos
+    label_singular: Produto
+    description: >-
+      Cada produto do catálogo é um arquivo separado aqui. Editar um campo e
+      salvar já cria um commit no GitHub — a Vercel publica a mudança
+      automaticamente em alguns instantes.
+    folder: src/data/products
+    create: true
+    delete: true
+    slug: '{{id}}'
+    identifier_field: name
+    summary: '{{name}} ({{brand}})'
+    fields:
+      - label: 'ID único do produto'
+        name: id
+        widget: string
+        pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'use só letras minúsculas, números e hífen']
+        hint: >-
+          Importante: não altere este campo depois de criado — outras partes
+          do catálogo (a página em que o produto aparece) usam esse ID pra
+          encontrá-lo. Se mudar aqui, o produto some da página onde estava.
+      - label: Marca
+        name: brand
+        widget: select
+        options:
+          - { label: Intelbras, value: intelbras }
+          - { label: Hikvision, value: hikvision }
+          - { label: TP-Link, value: tp-link }
+          - { label: Aruba, value: aruba }
+          - { label: Brother, value: brother }
+          - { label: Epson, value: epson }
+          - { label: Canon, value: canon }
+          - { label: Zebra, value: zebra }
+          - { label: Lenovo, value: lenovo }
+          - { label: Dell, value: dell }
+          - { label: Acer, value: acer }
+          - { label: Kingston, value: kingston }
+          - { label: Western Digital, value: wd }
+          - { label: Patriot, value: patriot }
+          - { label: Lexar, value: lexar }
+          - { label: Honeywell, value: honeywell }
+          - { label: AOC, value: aoc }
+          - { label: LG, value: lg }
+          - { label: Samsung, value: samsung }
+          - { label: Motorola, value: motorola }
+          - { label: Furukawa, value: furukawa }
+      - label: Categoria
+        name: category
+        widget: select
+        hint: >-
+          Só muda o rótulo/agrupamento do produto — para ele aparecer numa
+          página diferente do catálogo, é preciso também editar
+          src/data/pages.js (fora deste painel).
+        options:
+          - { label: Computadores e Notebooks, value: computadores }
+          - { label: Monitores e Displays, value: monitores }
+          - { label: Armazenamento, value: armazenamento }
+          - { label: Memória e Componentes, value: memoria }
+          - { label: Redes e Conectividade, value: redes }
+          - { label: Segurança Eletrônica, value: seguranca }
+          - { label: Impressão e Digitalização, value: impressao }
+          - { label: Impressão Térmica e Automação, value: automacao }
+          - { label: Comunicação, value: comunicacao }
+          - { label: Periféricos e Acessórios, value: perifericos }
+          - { label: Infraestrutura e Conectividade, value: infraestrutura }
+          - { label: Destaques do Portfólio, value: destaques }
+      - { label: Nome do produto, name: name, widget: string }
+      - { label: Modelo / detalhe, name: model, widget: string }
+      - { label: Descrição, name: description, widget: text, required: false }
+      - label: Especificações
+        name: specs
+        widget: list
+        field: { label: Item, name: item, widget: string }
+      - label: Foto do produto
+        name: image
+        widget: image
+        required: false
+        hint: >-
+          Se não enviar uma foto, o sistema tenta usar automaticamente uma
+          imagem chamada exatamente como o ID do produto (ex.: "meu-id.jpg")
+          já presente em src/assets/products/.
+      - label: 'Ícone de placeholder (se não houver foto)'
+        name: icon
+        widget: select
+        default: notebook
+        options:
+          - notebook
+          - monitor
+          - ssd
+          - external-drive
+          - ram
+          - memory-card
+          - router
+          - switch
+          - access-point
+          - cable
+          - camera
+          - dvr
+          - printer
+          - label-printer
+          - scanner
+          - radio
+          - phone
+          - mouse
+          - dock
+          - webcam
+          - usb-adapter
+          - fiber
+          - rack

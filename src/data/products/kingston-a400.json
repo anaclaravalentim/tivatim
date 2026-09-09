@@ -1,0 +1,13 @@
+{
+  "id": "kingston-a400",
+  "brand": "kingston",
+  "category": "armazenamento",
+  "name": "A400",
+  "model": "480GB",
+  "description": "SSD SATA de entrada, ideal para substituir HDs antigos.",
+  "specs": [
+    "SATA III",
+    "2.5\""
+  ],
+  "icon": "ssd"
+}

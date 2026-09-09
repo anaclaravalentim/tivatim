@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-tip-435g",
+  "brand": "intelbras",
+  "category": "comunicacao",
+  "name": "TIP 435G",
+  "model": "Telefone IP Gigabit",
+  "description": "Telefone IP com portas Gigabit para redes de alta demanda.",
+  "specs": [
+    "4 contas SIP",
+    "Portas Gigabit"
+  ],
+  "icon": "phone"
+}

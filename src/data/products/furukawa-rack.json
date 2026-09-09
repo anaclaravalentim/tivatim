@@ -1,0 +1,13 @@
+{
+  "id": "furukawa-rack",
+  "brand": "furukawa",
+  "category": "infraestrutura",
+  "name": "Rack Fechado",
+  "model": "19\" 12U",
+  "description": "Rack para organização de equipamentos de rede.",
+  "specs": [
+    "19\"",
+    "Porta com fechadura"
+  ],
+  "icon": "rack"
+}

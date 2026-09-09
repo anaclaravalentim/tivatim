@@ -1,0 +1,13 @@
+{
+  "id": "honeywell-voyager-1450g",
+  "brand": "honeywell",
+  "category": "automacao",
+  "name": "Voyager 1450g",
+  "model": "Leitor de Código de Barras",
+  "description": "Leitor 2D de bancada para automação comercial.",
+  "specs": [
+    "Leitura 1D/2D",
+    "USB"
+  ],
+  "icon": "scanner"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "kingston-nv2",
+  "brand": "kingston",
+  "category": "armazenamento",
+  "name": "NV2",
+  "model": "1TB",
+  "description": "SSD NVMe para upgrade de desempenho em desktops e notebooks.",
+  "specs": [
+    "NVMe PCIe 4.0",
+    "M.2 2280"
+  ],
+  "icon": "ssd"
+}

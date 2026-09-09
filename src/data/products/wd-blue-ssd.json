@@ -1,0 +1,13 @@
+{
+  "id": "wd-blue-ssd",
+  "brand": "wd",
+  "category": "armazenamento",
+  "name": "WD Blue",
+  "model": "1TB",
+  "description": "SSD para uso diário com boa relação custo-benefício.",
+  "specs": [
+    "SATA III",
+    "2.5\""
+  ],
+  "icon": "ssd"
+}

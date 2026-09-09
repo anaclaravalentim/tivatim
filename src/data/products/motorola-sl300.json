@@ -1,0 +1,13 @@
+{
+  "id": "motorola-sl300",
+  "brand": "motorola",
+  "category": "comunicacao",
+  "name": "SL300",
+  "model": "Rádio Digital Profissional",
+  "description": "Rádio digital compacto para comunicação corporativa.",
+  "specs": [
+    "Digital/Analógico",
+    "Bateria de longa duração"
+  ],
+  "icon": "radio"
+}

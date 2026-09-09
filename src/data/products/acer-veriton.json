@@ -1,0 +1,13 @@
+{
+  "id": "acer-veriton",
+  "brand": "acer",
+  "category": "computadores",
+  "name": "Veriton",
+  "model": "Desktop Corporativo",
+  "description": "Desktop compacto para ambientes corporativos e escritórios.",
+  "specs": [
+    "8GB RAM",
+    "SSD NVMe"
+  ],
+  "icon": "notebook"
+}

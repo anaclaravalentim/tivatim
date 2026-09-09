@@ -1,0 +1,13 @@
+{
+  "id": "dell-latitude-3420",
+  "brand": "dell",
+  "category": "computadores",
+  "name": "Latitude 3420",
+  "model": "Intel Core i5",
+  "description": "Linha corporativa Dell com foco em confiabilidade e gestão.",
+  "specs": [
+    "8–16GB RAM",
+    "SSD NVMe"
+  ],
+  "icon": "notebook"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "aruba-cx-6000",
+  "brand": "aruba",
+  "category": "infraestrutura",
+  "name": "CX 6000",
+  "model": "Switch Corporativo",
+  "description": "Switch de acesso para redes corporativas robustas.",
+  "specs": [
+    "Portas Gigabit",
+    "Empilhável"
+  ],
+  "icon": "switch"
+}

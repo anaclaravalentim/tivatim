@@ -1,0 +1,13 @@
+{
+  "id": "wd-my-passport",
+  "brand": "wd",
+  "category": "armazenamento",
+  "name": "My Passport",
+  "model": "2TB",
+  "description": "HD externo portátil para backup e transporte de arquivos.",
+  "specs": [
+    "USB 3.0",
+    "Compacto"
+  ],
+  "icon": "external-drive"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lexar-ares",
+  "brand": "lexar",
+  "category": "memoria",
+  "name": "ARES",
+  "model": "16GB DDR4",
+  "description": "Memória RAM voltada a montagens gamer de alto desempenho.",
+  "specs": [
+    "DDR4",
+    "RGB"
+  ],
+  "icon": "ram"
+}

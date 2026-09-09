@@ -1,0 +1,13 @@
+{
+  "id": "hikvision-nvr-4ch",
+  "brand": "hikvision",
+  "category": "seguranca",
+  "name": "DS-7604NI-K1",
+  "model": "NVR 4 canais",
+  "description": "NVR para gerenciamento de câmeras IP em rede.",
+  "specs": [
+    "4 canais",
+    "Full HD/4K"
+  ],
+  "icon": "dvr"
+}

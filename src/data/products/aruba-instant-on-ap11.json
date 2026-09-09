@@ -1,0 +1,13 @@
+{
+  "id": "aruba-instant-on-ap11",
+  "brand": "aruba",
+  "category": "redes",
+  "name": "Instant On AP11",
+  "model": "Access Point",
+  "description": "Access point para redes Wi-Fi residenciais e pequenos negócios.",
+  "specs": [
+    "Wi-Fi 5",
+    "Gestão via app"
+  ],
+  "icon": "access-point"
+}

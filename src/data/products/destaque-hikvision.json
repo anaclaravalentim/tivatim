@@ -1,0 +1,13 @@
+{
+  "id": "destaque-hikvision",
+  "brand": "hikvision",
+  "category": "destaques",
+  "name": "DS-2CD1123G0-I",
+  "model": "Câmera IP",
+  "description": "Solução de videomonitoramento com boa relação custo-benefício.",
+  "specs": [
+    "2MP",
+    "H.265+"
+  ],
+  "icon": "camera"
+}

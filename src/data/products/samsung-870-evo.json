@@ -1,0 +1,13 @@
+{
+  "id": "samsung-870-evo",
+  "brand": "samsung",
+  "category": "armazenamento",
+  "name": "870 EVO",
+  "model": "1TB",
+  "description": "SSD SATA de alta durabilidade para uso intenso.",
+  "specs": [
+    "SATA III",
+    "2.5\""
+  ],
+  "icon": "ssd"
+}

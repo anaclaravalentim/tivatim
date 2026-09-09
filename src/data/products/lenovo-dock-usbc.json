@@ -1,0 +1,13 @@
+{
+  "id": "lenovo-dock-usbc",
+  "brand": "lenovo",
+  "category": "perifericos",
+  "name": "USB-C Dock",
+  "model": "Estação de Conexão",
+  "description": "Dock para expandir conectividade de notebooks corporativos.",
+  "specs": [
+    "USB-C",
+    "HDMI/VGA"
+  ],
+  "icon": "dock"
+}

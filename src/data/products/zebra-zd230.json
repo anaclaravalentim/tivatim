@@ -1,0 +1,13 @@
+{
+  "id": "zebra-zd230",
+  "brand": "zebra",
+  "category": "automacao",
+  "name": "ZD230",
+  "model": "Impressora Térmica",
+  "description": "Impressora de etiquetas para operação comercial e logística.",
+  "specs": [
+    "Térmica direta",
+    "203dpi"
+  ],
+  "icon": "label-printer"
+}

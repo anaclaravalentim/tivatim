@@ -1,0 +1,13 @@
+{
+  "id": "kingston-canvas-go-plus",
+  "brand": "kingston",
+  "category": "memoria",
+  "name": "Canvas Go! Plus",
+  "model": "128GB microSD",
+  "description": "Cartão de memória de alta velocidade para câmeras e drones.",
+  "specs": [
+    "microSDXC",
+    "Classe 10"
+  ],
+  "icon": "memory-card"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-tip-300",
+  "brand": "intelbras",
+  "category": "comunicacao",
+  "name": "TIP 300",
+  "model": "Telefone IP",
+  "description": "Telefone IP com tela colorida para ambientes corporativos.",
+  "specs": [
+    "3 contas SIP",
+    "PoE opcional"
+  ],
+  "icon": "phone"
+}

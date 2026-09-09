@@ -1,0 +1,13 @@
+{
+  "id": "brother-mfc-j997dw",
+  "brand": "brother",
+  "category": "impressao",
+  "name": "MFC-J997DW",
+  "model": "Multifuncional Jato de Tinta",
+  "description": "Multifuncional com impressão frente e verso automática.",
+  "specs": [
+    "Wi-Fi",
+    "Duplex automático"
+  ],
+  "icon": "printer"
+}

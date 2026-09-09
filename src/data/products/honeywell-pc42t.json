@@ -1,0 +1,13 @@
+{
+  "id": "honeywell-pc42t",
+  "brand": "honeywell",
+  "category": "automacao",
+  "name": "PC42t",
+  "model": "Impressora de Etiquetas",
+  "description": "Impressora compacta de etiquetas para automação comercial.",
+  "specs": [
+    "Térmica/transferência",
+    "203dpi"
+  ],
+  "icon": "label-printer"
+}

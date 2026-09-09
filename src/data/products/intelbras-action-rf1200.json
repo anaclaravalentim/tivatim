@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-action-rf1200",
+  "brand": "intelbras",
+  "category": "redes",
+  "name": "Action RF 1200",
+  "model": "Wi-Fi AC",
+  "description": "Roteador para conectividade residencial e pequenos escritórios.",
+  "specs": [
+    "Dual band",
+    "Até 1200Mbps"
+  ],
+  "icon": "router"
+}

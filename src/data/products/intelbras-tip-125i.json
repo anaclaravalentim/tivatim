@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-tip-125i",
+  "brand": "intelbras",
+  "category": "comunicacao",
+  "name": "TIP 125i",
+  "model": "Telefone IP",
+  "description": "Telefone IP para ambientes corporativos com VoIP.",
+  "specs": [
+    "2 contas SIP",
+    "PoE opcional"
+  ],
+  "icon": "phone"
+}

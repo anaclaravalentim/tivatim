@@ -1,0 +1,13 @@
+{
+  "id": "dell-keyboard-kb216",
+  "brand": "dell",
+  "category": "perifericos",
+  "name": "KB216",
+  "model": "Teclado com fio",
+  "description": "Teclado padrão para uso corporativo do dia a dia.",
+  "specs": [
+    "USB",
+    "Layout ABNT2"
+  ],
+  "icon": "mouse"
+}

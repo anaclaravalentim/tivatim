@@ -1,0 +1,13 @@
+{
+  "id": "tplink-switch-sg",
+  "brand": "tp-link",
+  "category": "infraestrutura",
+  "name": "TL-SG1024",
+  "model": "Switch 24 portas",
+  "description": "Switch para expansão de redes locais em rack.",
+  "specs": [
+    "24 portas Gigabit",
+    "Não gerenciável"
+  ],
+  "icon": "switch"
+}

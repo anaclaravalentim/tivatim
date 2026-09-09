@@ -1,0 +1,13 @@
+{
+  "id": "honeywell-pd45",
+  "brand": "honeywell",
+  "category": "automacao",
+  "name": "PD45",
+  "model": "Impressora Industrial",
+  "description": "Impressora industrial de etiquetas para alta demanda.",
+  "specs": [
+    "Térmica/transferência",
+    "Rede/USB"
+  ],
+  "icon": "label-printer"
+}

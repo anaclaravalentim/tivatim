@@ -1,0 +1,13 @@
+{
+  "id": "lenovo-thinkvision-s24e",
+  "brand": "lenovo",
+  "category": "monitores",
+  "name": "ThinkVision S24e",
+  "model": "24\"",
+  "description": "Monitor de entrada para uso corporativo e doméstico.",
+  "specs": [
+    "Full HD IPS",
+    "Design slim"
+  ],
+  "icon": "monitor"
+}

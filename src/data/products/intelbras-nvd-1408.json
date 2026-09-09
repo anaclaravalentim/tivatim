@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-nvd-1408",
+  "brand": "intelbras",
+  "category": "seguranca",
+  "name": "NVD 1408",
+  "model": "NVR 8 canais",
+  "description": "NVR para centralizar o monitoramento de câmeras IP.",
+  "specs": [
+    "8 canais",
+    "Full HD"
+  ],
+  "icon": "dvr"
+}

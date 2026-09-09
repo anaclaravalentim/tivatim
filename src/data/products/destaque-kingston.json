@@ -1,0 +1,13 @@
+{
+  "id": "destaque-kingston",
+  "brand": "kingston",
+  "category": "destaques",
+  "name": "NV2",
+  "model": "SSD NVMe 1TB",
+  "description": "Upgrade de armazenamento com alta velocidade de transferência.",
+  "specs": [
+    "NVMe PCIe 4.0",
+    "M.2 2280"
+  ],
+  "icon": "ssd"
+}

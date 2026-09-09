@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-patch-panel",
+  "brand": "intelbras",
+  "category": "infraestrutura",
+  "name": "Patch Panel",
+  "model": "24 portas",
+  "description": "Patch panel para organização de cabeamento estruturado.",
+  "specs": [
+    "24 portas",
+    "Cat.6"
+  ],
+  "icon": "rack"
+}

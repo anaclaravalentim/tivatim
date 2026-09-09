@@ -1,0 +1,13 @@
+{
+  "id": "motorola-talkabout-t400",
+  "brand": "motorola",
+  "category": "comunicacao",
+  "name": "Talkabout T400",
+  "model": "Rádio Comunicador",
+  "description": "Rádio comunicador resistente a respingos, para uso externo.",
+  "specs": [
+    "Alcance até 35km",
+    "22 canais"
+  ],
+  "icon": "radio"
+}

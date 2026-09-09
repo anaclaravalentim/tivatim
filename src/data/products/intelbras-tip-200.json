@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-tip-200",
+  "brand": "intelbras",
+  "category": "comunicacao",
+  "name": "TIP 200",
+  "model": "Telefone IP",
+  "description": "Telefone IP de entrada para expansão de ramais VoIP.",
+  "specs": [
+    "1 conta SIP",
+    "PoE opcional"
+  ],
+  "icon": "phone"
+}

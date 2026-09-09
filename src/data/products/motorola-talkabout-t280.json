@@ -1,0 +1,13 @@
+{
+  "id": "motorola-talkabout-t280",
+  "brand": "motorola",
+  "category": "comunicacao",
+  "name": "Talkabout T280",
+  "model": "Rádio Comunicador",
+  "description": "Rádio comunicador compacto para uso em equipe.",
+  "specs": [
+    "Alcance até 32km",
+    "22 canais"
+  ],
+  "icon": "radio"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "hikvision-ds-2cd1123g0",
+  "brand": "hikvision",
+  "category": "seguranca",
+  "name": "DS-2CD1123G0-I",
+  "model": "Câmera IP Dome",
+  "description": "Câmera IP dome para ambientes internos e externos.",
+  "specs": [
+    "2MP",
+    "Visão noturna IR"
+  ],
+  "icon": "camera"
+}

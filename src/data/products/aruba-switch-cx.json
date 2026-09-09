@@ -1,0 +1,13 @@
+{
+  "id": "aruba-switch-cx",
+  "brand": "aruba",
+  "category": "infraestrutura",
+  "name": "CX 6100",
+  "model": "Switch Corporativo",
+  "description": "Switch para infraestrutura de redes corporativas robustas.",
+  "specs": [
+    "Portas Gigabit",
+    "Gerenciável"
+  ],
+  "icon": "switch"
+}

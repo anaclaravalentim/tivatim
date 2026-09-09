@@ -1,0 +1,13 @@
+{
+  "id": "aoc-24g2",
+  "brand": "aoc",
+  "category": "monitores",
+  "name": "24G2",
+  "model": "24\"",
+  "description": "Monitor gamer com alta taxa de atualização e resposta rápida.",
+  "specs": [
+    "Full HD IPS",
+    "144Hz"
+  ],
+  "icon": "monitor"
+}

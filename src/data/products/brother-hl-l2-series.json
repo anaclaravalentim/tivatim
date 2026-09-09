@@ -1,0 +1,13 @@
+{
+  "id": "brother-hl-l2-series",
+  "brand": "brother",
+  "category": "impressao",
+  "name": "HL-L2 Series",
+  "model": "Impressora Laser",
+  "description": "Impressora laser monocromática para alto volume de páginas.",
+  "specs": [
+    "Laser mono",
+    "Alta velocidade"
+  ],
+  "icon": "printer"
+}

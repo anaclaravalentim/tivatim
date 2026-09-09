@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-mhdx-1116",
+  "brand": "intelbras",
+  "category": "seguranca",
+  "name": "MHDX 1116",
+  "model": "DVR 16 canais",
+  "description": "Gravador multi-HD para centralizar o monitoramento.",
+  "specs": [
+    "16 canais",
+    "Full HD"
+  ],
+  "icon": "dvr"
+}

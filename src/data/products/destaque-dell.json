@@ -1,0 +1,13 @@
+{
+  "id": "destaque-dell",
+  "brand": "dell",
+  "category": "destaques",
+  "name": "Latitude 3420",
+  "model": "Notebook Corporativo",
+  "description": "Mobilidade e confiabilidade para equipes corporativas.",
+  "specs": [
+    "Intel Core i5",
+    "SSD NVMe"
+  ],
+  "icon": "notebook"
+}

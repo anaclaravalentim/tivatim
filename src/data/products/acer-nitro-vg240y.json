@@ -1,0 +1,13 @@
+{
+  "id": "acer-nitro-vg240y",
+  "brand": "acer",
+  "category": "monitores",
+  "name": "Nitro VG240Y",
+  "model": "24\"",
+  "description": "Monitor gamer de entrada com boa fluidez visual.",
+  "specs": [
+    "Full HD IPS",
+    "165Hz"
+  ],
+  "icon": "monitor"
+}

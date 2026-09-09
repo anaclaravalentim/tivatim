@@ -1,0 +1,13 @@
+{
+  "id": "zebra-ds4608",
+  "brand": "zebra",
+  "category": "automacao",
+  "name": "DS4608",
+  "model": "Leitor de Código de Barras",
+  "description": "Leitor de bancada para PDV com leitura rápida.",
+  "specs": [
+    "Leitura 1D/2D",
+    "USB"
+  ],
+  "icon": "scanner"
+}

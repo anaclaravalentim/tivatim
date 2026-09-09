@@ -1,0 +1,13 @@
+{
+  "id": "tplink-ub500",
+  "brand": "tp-link",
+  "category": "perifericos",
+  "name": "UB500",
+  "model": "Adaptador Bluetooth USB",
+  "description": "Adaptador USB para adicionar Bluetooth a desktops.",
+  "specs": [
+    "Bluetooth 5.0",
+    "USB"
+  ],
+  "icon": "usb-adapter"
+}

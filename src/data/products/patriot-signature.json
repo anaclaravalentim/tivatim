@@ -1,0 +1,13 @@
+{
+  "id": "patriot-signature",
+  "brand": "patriot",
+  "category": "memoria",
+  "name": "Signature Line",
+  "model": "8GB DDR4",
+  "description": "Memória para upgrade de desktops e notebooks.",
+  "specs": [
+    "DDR4",
+    "SODIMM/UDIMM"
+  ],
+  "icon": "ram"
+}

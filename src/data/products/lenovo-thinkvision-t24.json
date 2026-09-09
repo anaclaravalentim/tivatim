@@ -1,0 +1,13 @@
+{
+  "id": "lenovo-thinkvision-t24",
+  "brand": "lenovo",
+  "category": "monitores",
+  "name": "ThinkVision T24",
+  "model": "24\"",
+  "description": "Monitor corporativo com foco em ergonomia.",
+  "specs": [
+    "Full HD IPS",
+    "Pivot"
+  ],
+  "icon": "monitor"
+}

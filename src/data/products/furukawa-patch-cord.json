@@ -1,0 +1,13 @@
+{
+  "id": "furukawa-patch-cord",
+  "brand": "furukawa",
+  "category": "redes",
+  "name": "Patch Cord",
+  "model": "Cat.6 Flexível",
+  "description": "Cordão de conexão para ligação de equipamentos em rack.",
+  "specs": [
+    "Cat.6",
+    "Flexível"
+  ],
+  "icon": "cable"
+}

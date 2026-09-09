@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-vip-1230-b",
+  "brand": "intelbras",
+  "category": "seguranca",
+  "name": "VIP 1230 B",
+  "model": "Câmera IP",
+  "description": "Câmera IP para monitoramento residencial e comercial.",
+  "specs": [
+    "Full HD",
+    "Visão noturna"
+  ],
+  "icon": "camera"
+}

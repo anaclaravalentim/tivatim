@@ -1,0 +1,13 @@
+{
+  "id": "samsung-viewfinity-s6",
+  "brand": "samsung",
+  "category": "monitores",
+  "name": "ViewFinity S6",
+  "model": "27\"",
+  "description": "Monitor profissional de alta resolução para produtividade.",
+  "specs": [
+    "QHD",
+    "USB-C"
+  ],
+  "icon": "monitor"
+}

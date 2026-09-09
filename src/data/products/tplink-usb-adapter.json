@@ -1,0 +1,13 @@
+{
+  "id": "tplink-usb-adapter",
+  "brand": "tp-link",
+  "category": "perifericos",
+  "name": "TL-WN823N",
+  "model": "Adaptador Wi-Fi USB",
+  "description": "Adaptador para adicionar conectividade Wi-Fi a desktops.",
+  "specs": [
+    "USB",
+    "Até 300Mbps"
+  ],
+  "icon": "usb-adapter"
+}

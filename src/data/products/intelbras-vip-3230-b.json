@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-vip-3230-b",
+  "brand": "intelbras",
+  "category": "seguranca",
+  "name": "VIP 3230 B",
+  "model": "Câmera IP Bullet",
+  "description": "Câmera IP bullet para monitoramento de áreas externas.",
+  "specs": [
+    "Full HD",
+    "Visão noturna"
+  ],
+  "icon": "camera"
+}

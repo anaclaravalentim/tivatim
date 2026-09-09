@@ -1,0 +1,13 @@
+{
+  "id": "zebra-ds2208",
+  "brand": "zebra",
+  "category": "automacao",
+  "name": "DS2208",
+  "model": "Leitor de Código de Barras",
+  "description": "Leitor 2D para automação de PDV e controle de estoque.",
+  "specs": [
+    "Leitura 1D/2D",
+    "USB"
+  ],
+  "icon": "scanner"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lexar-nm620",
+  "brand": "lexar",
+  "category": "armazenamento",
+  "name": "NM620",
+  "model": "512GB",
+  "description": "SSD NVMe compacto para notebooks e desktops modernos.",
+  "specs": [
+    "NVMe PCIe 3.0",
+    "M.2 2280"
+  ],
+  "icon": "ssd"
+}

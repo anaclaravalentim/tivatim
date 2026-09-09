@@ -1,0 +1,13 @@
+{
+  "id": "dell-p2422h",
+  "brand": "dell",
+  "category": "monitores",
+  "name": "P2422H",
+  "model": "24\"",
+  "description": "Monitor profissional para ambientes corporativos.",
+  "specs": [
+    "Full HD IPS",
+    "Ajuste de altura"
+  ],
+  "icon": "monitor"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lenovo-thinkpad-e14",
+  "brand": "lenovo",
+  "category": "computadores",
+  "name": "ThinkPad E14",
+  "model": "Intel Core i5",
+  "description": "Notebook corporativo para produtividade e mobilidade no dia a dia.",
+  "specs": [
+    "8–16GB RAM",
+    "SSD NVMe"
+  ],
+  "icon": "notebook"
+}

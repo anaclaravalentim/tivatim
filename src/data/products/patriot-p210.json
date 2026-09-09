@@ -1,0 +1,13 @@
+{
+  "id": "patriot-p210",
+  "brand": "patriot",
+  "category": "armazenamento",
+  "name": "P210",
+  "model": "512GB",
+  "description": "SSD SATA para upgrade acessível de performance.",
+  "specs": [
+    "SATA III",
+    "2.5\""
+  ],
+  "icon": "ssd"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "patriot-viper-steel",
+  "brand": "patriot",
+  "category": "memoria",
+  "name": "Viper Steel",
+  "model": "16GB DDR4",
+  "description": "Memória de performance para montagens gamer.",
+  "specs": [
+    "DDR4",
+    "Overclock"
+  ],
+  "icon": "ram"
+}

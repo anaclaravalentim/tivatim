@@ -1,0 +1,13 @@
+{
+  "id": "motorola-talkabout-t200",
+  "brand": "motorola",
+  "category": "comunicacao",
+  "name": "Talkabout T200",
+  "model": "Rádio Comunicador",
+  "description": "Par de rádios para comunicação em equipes e eventos.",
+  "specs": [
+    "Alcance até 25km",
+    "22 canais"
+  ],
+  "icon": "radio"
+}

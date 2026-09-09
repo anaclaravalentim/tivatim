@@ -1,0 +1,13 @@
+{
+  "id": "acer-vero-mouse",
+  "brand": "acer",
+  "category": "perifericos",
+  "name": "Vero Mouse",
+  "model": "Mouse sustentável",
+  "description": "Mouse fabricado com plástico reciclado para uso diário.",
+  "specs": [
+    "USB",
+    "Óptico"
+  ],
+  "icon": "mouse"
+}

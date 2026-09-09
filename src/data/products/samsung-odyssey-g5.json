@@ -1,0 +1,13 @@
+{
+  "id": "samsung-odyssey-g5",
+  "brand": "samsung",
+  "category": "monitores",
+  "name": "Odyssey G5",
+  "model": "27\"",
+  "description": "Monitor curvo gamer para maior imersão.",
+  "specs": [
+    "QHD",
+    "165Hz"
+  ],
+  "icon": "monitor"
+}

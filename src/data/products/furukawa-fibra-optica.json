@@ -1,0 +1,13 @@
+{
+  "id": "furukawa-fibra-optica",
+  "brand": "furukawa",
+  "category": "infraestrutura",
+  "name": "Cabo Óptico",
+  "model": "Fibra Multimodo",
+  "description": "Cabeamento óptico para backbone de redes corporativas.",
+  "specs": [
+    "Fibra multimodo",
+    "Uso interno/externo"
+  ],
+  "icon": "fiber"
+}

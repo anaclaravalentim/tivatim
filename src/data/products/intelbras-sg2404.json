@@ -1,0 +1,13 @@
+{
+  "id": "intelbras-sg2404",
+  "brand": "intelbras",
+  "category": "redes",
+  "name": "SG 2404 MR",
+  "model": "Switch 24 portas",
+  "description": "Switch gerenciável para redes corporativas estruturadas.",
+  "specs": [
+    "24 portas Gigabit",
+    "Gerenciável"
+  ],
+  "icon": "switch"
+}

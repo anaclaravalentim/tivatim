@@ -1,0 +1,13 @@
+{
+  "id": "kingston-canvas-select",
+  "brand": "kingston",
+  "category": "memoria",
+  "name": "Canvas Select Plus",
+  "model": "64GB microSD",
+  "description": "Cartão de memória para câmeras, celulares e dispositivos embarcados.",
+  "specs": [
+    "microSDXC",
+    "Classe 10"
+  ],
+  "icon": "memory-card"
+}

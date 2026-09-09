@@ -1,0 +1,13 @@
+{
+  "id": "lenovo-ideapad-3",
+  "brand": "lenovo",
+  "category": "computadores",
+  "name": "IdeaPad 3",
+  "model": "AMD Ryzen 5",
+  "description": "Notebook versátil para uso pessoal e tarefas do cotidiano.",
+  "specs": [
+    "8GB RAM",
+    "SSD 256GB"
+  ],
+  "icon": "notebook"
+}
