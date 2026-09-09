@@ -11,8 +11,9 @@ folhear páginas, zoom, busca por categoria e ficha de cada produto.
 
 ## Como editar os produtos sem mexer em código
 
-Existe um painel de edição em `/admin` (ex.:
-`https://SEU-DOMINIO.vercel.app/admin`) onde é possível **criar, editar e
+Existe um painel de edição em
+[tivatim.vercel.app/admin](https://tivatim.vercel.app/admin) onde é
+possível **criar, editar e
 excluir produtos** do catálogo direto pelo navegador — sem precisar abrir
 nenhum arquivo de código. Cada alteração salva no painel vira
 automaticamente um novo commit no GitHub, e a Vercel publica a mudança em
@@ -44,27 +45,12 @@ página do catálogo** ele aparece — isso continua definido no arquivo
 
 ## Configuração inicial do painel (feita uma única vez)
 
-Isso já foi implementado no código, mas precisa de 3 passos manuais pra
-ficar funcionando — feitos uma única vez, por quem tem acesso à conta da
-Vercel e do GitHub. Depois disso, o dia a dia de editar produtos não exige
-mais nenhum desses passos.
+O site já está publicado em **https://tivatim.vercel.app** e o
+`config.yml` já aponta pra esse domínio. Faltam só 2 passos manuais, feitos
+uma única vez por quem tem acesso à conta da Vercel e do GitHub. Depois
+disso, o dia a dia de editar produtos não exige mais nenhum desses passos.
 
-### Passo 1 — Publicar o site na Vercel
-
-Se o site ainda não está publicado na Vercel:
-
-1. Acesse [vercel.com](https://vercel.com) e entre com sua conta (pode ser
-   com login do GitHub).
-2. Clique em **Add New → Project**.
-3. Selecione o repositório `anaclaravalentim/tivatim` e clique em
-   **Import**.
-4. A Vercel detecta automaticamente que é um projeto Vite — não precisa
-   mudar nenhuma configuração. Clique em **Deploy**.
-5. Espere terminar (1-2 minutos) e anote o domínio gerado, algo como
-   `https://catalogo-xxxx.vercel.app` (aparece no topo da página do
-   projeto, em "Domains").
-
-### Passo 2 — Criar um "OAuth App" no GitHub
+### Passo 1 — Criar um "OAuth App" no GitHub
 
 Isso é o que permite ao painel `/admin` confirmar sua identidade do GitHub
 antes de deixar você editar os produtos.
@@ -74,47 +60,29 @@ antes de deixar você editar os produtos.
    → aba **OAuth Apps** → **New OAuth App**.
 2. Preencha:
    - **Application name:** `Catálogo Tivatim` (ou qualquer nome)
-   - **Homepage URL:** o domínio da Vercel do Passo 1 (ex.:
-     `https://catalogo-xxxx.vercel.app`)
-   - **Authorization callback URL:** o mesmo domínio + `/api/callback`
-     (ex.: `https://catalogo-xxxx.vercel.app/api/callback`)
+   - **Homepage URL:** `https://tivatim.vercel.app`
+   - **Authorization callback URL:** `https://tivatim.vercel.app/api/callback`
 3. Clique em **Register application**.
 4. Na página do app criado, copie o **Client ID** e clique em **Generate a
    new client secret** para gerar e copiar o **Client Secret**. Guarde os
    dois — o secret só aparece uma vez.
 
-### Passo 3 — Configurar as variáveis de ambiente na Vercel
+### Passo 2 — Configurar as variáveis de ambiente na Vercel
 
 1. No painel da Vercel, abra o projeto → **Settings** → **Environment
    Variables**.
 2. Adicione duas variáveis (marcando todos os ambientes: Production,
    Preview e Development):
-   - `OAUTH_CLIENT_ID` → cole o Client ID do Passo 2
-   - `OAUTH_CLIENT_SECRET` → cole o Client Secret do Passo 2
+   - `OAUTH_CLIENT_ID` → cole o Client ID do Passo 1
+   - `OAUTH_CLIENT_SECRET` → cole o Client Secret do Passo 1
 3. Clique em **Save**.
 4. Vá em **Deployments**, abra o menu "⋯" do deployment mais recente e
    clique em **Redeploy** (as variáveis novas só valem a partir do próximo
    deploy).
 
-### Passo 4 — Apontar o painel pro domínio certo
-
-Abra `public/admin/config.yml` neste projeto e troque a linha:
-
-```yaml
-base_url: https://SEU-DOMINIO-AQUI.vercel.app
-```
-
-pelo domínio real da Vercel (o mesmo do Passo 1), depois envie a mudança:
-
-```bash
-git add public/admin/config.yml
-git commit -m "Configura domínio do painel de edição"
-git push
-```
-
 ### Pronto — usando o painel
 
-Acesse `https://SEU-DOMINIO.vercel.app/admin`, clique em **Login with
+Acesse `https://tivatim.vercel.app/admin`, clique em **Login with
 GitHub**, autorize o app (só na primeira vez) e o painel abre com a lista
 de produtos. Qualquer edição salva já publica sozinha em alguns minutos.
 
