@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: anaclaravalentim/catalogo
+  repo: anaclaravalentim/tivatim
   branch: main
   # Troque pelo domínio real do site depois do primeiro deploy na Vercel
   # (ex.: https://catalogo-tivatim.vercel.app ou o domínio próprio).

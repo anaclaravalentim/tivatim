@@ -7,7 +7,7 @@ folhear páginas, zoom, busca por categoria e ficha de cada produto.
   `http://localhost:5173`).
 - **Build de produção:** `npm run build` (gera a pasta `dist/`).
 - **Deploy:** o projeto está conectado ao GitHub
-  (`anaclaravalentim/catalogo`) e publicado pela Vercel.
+  (`anaclaravalentim/tivatim`) e publicado pela Vercel.
 
 ## Como editar os produtos sem mexer em código
 
@@ -56,7 +56,7 @@ Se o site ainda não está publicado na Vercel:
 1. Acesse [vercel.com](https://vercel.com) e entre com sua conta (pode ser
    com login do GitHub).
 2. Clique em **Add New → Project**.
-3. Selecione o repositório `anaclaravalentim/catalogo` e clique em
+3. Selecione o repositório `anaclaravalentim/tivatim` e clique em
    **Import**.
 4. A Vercel detecta automaticamente que é um projeto Vite — não precisa
    mudar nenhuma configuração. Clique em **Deploy**.
@@ -118,7 +118,7 @@ Acesse `https://SEU-DOMINIO.vercel.app/admin`, clique em **Login with
 GitHub**, autorize o app (só na primeira vez) e o painel abre com a lista
 de produtos. Qualquer edição salva já publica sozinha em alguns minutos.
 
-Só quem tem acesso de escrita ao repositório `anaclaravalentim/catalogo`
+Só quem tem acesso de escrita ao repositório `anaclaravalentim/tivatim`
 no GitHub consegue logar no painel — então dar acesso a "outra pessoa" pra
 editar os produtos é adicioná-la como colaboradora do repositório (GitHub
 → Settings → Collaborators).
