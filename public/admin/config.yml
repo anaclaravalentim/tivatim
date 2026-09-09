@@ -25,6 +25,8 @@ collections:
     folder: src/data/products
     create: true
     delete: true
+    extension: json
+    format: json
     slug: '{{id}}'
     identifier_field: name
     summary: '{{name}} ({{brand}})'
