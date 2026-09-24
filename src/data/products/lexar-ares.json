@@ -9,5 +9,6 @@
     "DDR4",
     "RGB"
   ],
-  "icon": "ram"
+  "icon": "ram",
+  "image": "/products/lexar-ares.png"
 }

@@ -9,5 +9,6 @@
     "DDR4",
     "UDIMM"
   ],
-  "icon": "ram"
+  "icon": "ram",
+  "image": "/products/kingston-valueram.jpg"
 }

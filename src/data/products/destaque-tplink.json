@@ -9,5 +9,6 @@
     "Wi-Fi 6",
     "Dual band"
   ],
-  "icon": "router"
+  "icon": "router",
+  "image": "/products/destaque-tplink.jpg"
 }

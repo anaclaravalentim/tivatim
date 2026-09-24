@@ -9,5 +9,6 @@
     "USB",
     "Óptico"
   ],
-  "icon": "mouse"
+  "icon": "mouse",
+  "image": "/products/acer-vero-mouse.jpg"
 }

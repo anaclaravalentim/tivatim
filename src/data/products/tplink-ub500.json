@@ -9,5 +9,6 @@
     "Bluetooth 5.0",
     "USB"
   ],
-  "icon": "usb-adapter"
+  "icon": "usb-adapter",
+  "image": "/products/tplink-ub500.jpg"
 }

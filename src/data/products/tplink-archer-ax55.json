@@ -9,5 +9,6 @@
     "Dual band",
     "OFDMA"
   ],
-  "icon": "router"
+  "icon": "router",
+  "image": "/products/tplink-archer-ax55.jpg"
 }

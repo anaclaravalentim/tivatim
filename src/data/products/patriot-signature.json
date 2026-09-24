@@ -9,5 +9,6 @@
     "DDR4",
     "SODIMM/UDIMM"
   ],
-  "icon": "ram"
+  "icon": "ram",
+  "image": "/products/patriot-signature.png"
 }

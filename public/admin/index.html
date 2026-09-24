@@ -8,5 +8,14 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- Traduz os textos fixos da interface (Contents, Media, Sort by, No
+         Entries etc.) para português — registrado antes do painel montar a
+         tela, e usado por causa do "locale: pt" em config.yml. -->
+    <script src="https://unpkg.com/decap-cms-locales@^3.0.0/dist/decap-cms-locales.js"></script>
+    <script>
+      if (window.CMS && window.DecapCmsLocales && window.DecapCmsLocales.pt) {
+        window.CMS.registerLocale('pt', window.DecapCmsLocales.pt);
+      }
+    </script>
   </body>
 </html>

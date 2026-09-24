@@ -9,5 +9,6 @@
     "QHD",
     "USB-C"
   ],
-  "icon": "monitor"
+  "icon": "monitor",
+  "image": "/products/samsung-viewfinity-s6.png"
 }

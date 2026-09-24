@@ -9,5 +9,6 @@
     "USB 3.0",
     "Compacto"
   ],
-  "icon": "external-drive"
+  "icon": "external-drive",
+  "image": "/products/wd-my-passport.jpg"
 }

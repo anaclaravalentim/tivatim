@@ -8,6 +8,11 @@ backend:
   base_url: https://tivatim.vercel.app
   auth_endpoint: api/auth
 
+# Traduz os textos fixos da interface (menus, botões, "No Entries" etc.)
+# pro português — ver public/admin/index.html, que carrega o pacote de
+# idiomas antes deste arquivo.
+locale: 'pt'
+
 # Fotos enviadas pelo painel vão para public/products/ e ficam acessíveis
 # em /products/<arquivo> — funciona tanto em desenvolvimento quanto no site
 # publicado, sem precisar de nenhuma etapa extra de build.
@@ -27,18 +32,22 @@ collections:
     delete: true
     extension: json
     format: json
-    slug: '{{id}}'
+    # Gerado a partir de marca + nome na criação (ex.: "Lenovo" + "ThinkPad
+    # E14" -> lenovo-thinkpad-e14) — esse identificador NÃO tem mais um campo
+    # editável no formulário (ver abaixo), então não tem como mudar sem
+    # querer depois que o produto já existe.
+    slug: '{{brand}}-{{name}}'
     identifier_field: name
-    summary: '{{name}} ({{brand}})'
+    summary: '{{name}} — {{brand}} (id: {{slug}})'
+    sortable_fields: [name, brand, category]
     fields:
-      - label: 'ID único do produto'
-        name: id
-        widget: string
-        pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'use só letras minúsculas, números e hífen']
-        hint: >-
-          Importante: não altere este campo depois de criado — outras partes
-          do catálogo (a página em que o produto aparece) usam esse ID pra
-          encontrá-lo. Se mudar aqui, o produto some da página onde estava.
+      # Sem campo editável pra o identificador do produto: ele é gerado uma
+      # única vez (na criação, a partir de marca + nome) e usado como nome
+      # do arquivo — outras partes do catálogo (a página em que o produto
+      # aparece) dependem dele pra encontrar o produto, então travamos essa
+      # edição por segurança. Se precisar consultá-lo, ele aparece entre
+      # parênteses no título de cada produto na lista.
+      - { name: id, widget: hidden, required: false }
       - label: Marca
         name: brand
         widget: select
@@ -95,10 +104,7 @@ collections:
         name: image
         widget: image
         required: false
-        hint: >-
-          Se não enviar uma foto, o sistema tenta usar automaticamente uma
-          imagem chamada exatamente como o ID do produto (ex.: "meu-id.jpg")
-          já presente em src/assets/products/.
+        hint: 'Aparece na ficha do produto e na lista deste painel.'
       - label: 'Ícone de placeholder (se não houver foto)'
         name: icon
         widget: select

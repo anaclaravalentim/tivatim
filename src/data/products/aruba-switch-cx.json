@@ -9,5 +9,6 @@
     "Portas Gigabit",
     "Gerenciável"
   ],
-  "icon": "switch"
+  "icon": "switch",
+  "image": "/products/aruba-switch-cx.jpg"
 }

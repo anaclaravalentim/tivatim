@@ -9,5 +9,6 @@
     "NVMe PCIe 4.0/5.0",
     "M.2 2280"
   ],
-  "icon": "ssd"
+  "icon": "ssd",
+  "image": "/products/samsung-990-evo.png"
 }

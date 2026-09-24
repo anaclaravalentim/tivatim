@@ -9,5 +9,6 @@
     "Intel Core i5",
     "SSD NVMe"
   ],
-  "icon": "notebook"
+  "icon": "notebook",
+  "image": "/products/destaque-dell.jpg"
 }

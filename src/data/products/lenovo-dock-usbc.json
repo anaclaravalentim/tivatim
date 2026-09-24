@@ -9,5 +9,6 @@
     "USB-C",
     "HDMI/VGA"
   ],
-  "icon": "dock"
+  "icon": "dock",
+  "image": "/products/lenovo-dock-usbc.jpg"
 }

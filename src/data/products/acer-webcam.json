@@ -9,5 +9,6 @@
     "HD 720p/1080p",
     "USB Plug and Play"
   ],
-  "icon": "webcam"
+  "icon": "webcam",
+  "image": "/products/acer-webcam.jpg"
 }

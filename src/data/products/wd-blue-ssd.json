@@ -9,5 +9,6 @@
     "SATA III",
     "2.5\""
   ],
-  "icon": "ssd"
+  "icon": "ssd",
+  "image": "/products/wd-blue-ssd.jpg"
 }
